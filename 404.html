@@ -61,10 +61,10 @@
     <script>
         // Fix github pages 404-ing on every subreddit url like https://gh.redditp.com/r/gifs
         // Inspired by https://github.com/rafgraph/spa-github-pages/blob/gh-pages/404.html
-        if (window.location.host === "gh.redditp.com" && window.location.pathname !== '/') {
+        if (window.location.host === "nohornyonmain.github.io" && window.location.pathname !== '/redditp/') {
             // Go to the root page, keep the GET parameters
             // TODO: avoid adding extra `/?&` characters every time
-            window.location = '/?' + window.location.pathname + '&' + window.location.search.substring(1);
+            window.location = '/redditp/?' + window.location.pathname.substring(8) + '&' + window.location.search.substring(1);
         }
     </script>
 </body>
